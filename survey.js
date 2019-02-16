@@ -3,6 +3,10 @@ Survey
     .applyTheme("default");
 
 var json = {
+  title: "Work Philosophy",
+    showProgressBar: "bottom",
+    goNextPageAutomatic: true,
+    showNavigationButtons: true,
     pages: [
       {
         questions: [
@@ -132,7 +136,8 @@ var json = {
             }
           ]
         }
-      ]
+      ],
+      completedHtml: "<p><h1>Thank you for sign up with us!</h1></p>"
 };
 
 window.survey = new Survey.Model(json);
